@@ -4,14 +4,14 @@
 (() => {
   const render = (actors) => {
     const fragment = document.createDocumentFragment();
-    const div = document.createElement('div');
+    const div = document.createElement('p2');
     const template = actors.map(actor => {
       return `
-        <div class="actor">
+        <p class="actor">
           <span>${actor.who}</span>
           <span>${actor.type}</span>
           <span>${actor.amount}</span>
-        </div>
+        </p>
       `;
     }).join('');
 

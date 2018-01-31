@@ -6,22 +6,48 @@
   </head>
   <body>
   <h1> Welcome to the invoices Convargo's simulator </h1>
-  
-  <p> Here your can enter the information of the trucker </p>
-    <div id="trucker">
+  <div2>
+  <p> </p>
+  <p> Here your can enter the information of the trucker : </p>
+    <p2 id="trucker">
+	<div>
+	  <p2> His name : </p2>
       <input class="name" type="text" placeholder="Trucker name"/>
+	</div>
+	<div>
+	  <p2> His price by km : </p2>
       <input class="price-by-km" type="number" placeholder="Price by km"/>
+	</div>
+	  <div>
+	  <p2> His price by m3 : </p2>
       <input class="price-by-cubic" type="number" placeholder="Price by m3"/>
-    </div>
-    <div id="shipper">
+	</div>
+    </p2>
+	<p> Then, the information of the shipper : </p>
+    <p2 id="shipper">
+	<div>
+	  <p2> His name : </p2>
       <input class="name" type="text" placeholder="Shipper name"/>
+	</div>
+	  <div>
+	  <p2> The distance required for the delivery (km) : </p2>
       <input class="distance" type="number" placeholder="Distance in km"/>
+	</div>
+	  <div>
+	  <p2> The volume of the merchandise (m3) : </p2>
       <input class="volume" type="number" placeholder="Volume in m3"/>
+	</div>
+	  <div>
+	  <p2> And finally, if you want the deductible reduction, check this box : </p2>
       <input class="option" type="checkbox" placeholder="Deductible option"/>
-    </div>
-    <button id="compute">Compute</button>
+	</div>
+    </p2>
+	
+    <button id="compute">Simulate</button>
     <div id="actors"></div>
     <script src="convargo.js"></script>
     <script src="index.js"></script>
+	
   </body>
+
 </html>
